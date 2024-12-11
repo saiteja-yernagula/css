@@ -6,7 +6,7 @@
     <title>Document</title>
 
     <style>
-        a:link{
+        /* a:link{
             color:red;
         }
 
@@ -64,12 +64,45 @@
   
      #section1:target{
         background-color: burlywood;
+     } */
+
+     h1::first-letter{
+        color:blue;
+        font-size: 50px;
      }
+
+     p::first-line{
+        color:brown;
+     }
+     p::selection{
+        color:blueviolet;
+        background-color: lightslategrey;
+     }
+
+     input::placeholder{
+        color:cadetblue
+     }
+
+     li::marker{
+        color:brown;
+       
+     }
+
+     div::after{
+        content: " ★ ";
+        color:blue;
+
+     }
+
+
+
     </style>
 </head>
 <body>
     
     <!-- 
+
+
     box sizing 
     margin 
     padding 
@@ -105,7 +138,6 @@
      active
      focus
 
-
      first-child
      last-child
      nth-child(1 or even or odd)
@@ -118,19 +150,55 @@
      :root{
      --primary: blue
      --secondar: lightblue
-     --dark: black
-     --light: white
-     
+     }
+     h1{
+     color: var(--primary);
      }
 
      variable usage
-
      :root
      :target
+
+
+     pseudo elements
+     it is used to apply styles based on particular part of the element
+
+     selector::part{
+     declaration
+     }
+     
+
+     hover
+     link
+     visited
+     variables
+     
       
 
     
     -->
+
+
+    <div>somecontent</div>
+    <div>somecontent</div>
+    <div>somecontent</div>
+    <div>somecontent</div>
+    <div>somecontent</div>
+    <h1>Branding</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus perferendis necessitatibus dolor quo corrupti consectetur porro! Eos odit perferendis culpa, iusto placeat quo qui totam nostrum quia facilis, explicabo dignissimos.</p>
+
+<input type="text" placeholder="enter your name">
+
+
+<ul>
+    <li>some content</li>
+    <li>some content</li>
+    <li>some content</li>
+</ul>
+
+
+<!--      
 <a href="#section">linked text</a>
 <a href="#section1">linked text</a>
 
@@ -146,7 +214,7 @@
     <h1>this is heading</h1>
     <p>This is paragraph</p>
  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit in cupiditate culpa ipsa velit. Numquam, ratione nam! Accusantium rem provident eum laborum harum! Non, totam? Impedit aspernatur blanditiis ducimus enim!
-</div>
+</div> -->
 
     
   
