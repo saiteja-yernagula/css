@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a:link{
+            color:red;
+        }
+
+        a:visited{
+            color:green;
+        }
+
+     
+
+        a:hover{
+            color:black;
+        }
+
+        a:active{
+            color:violet;
+        }
+
+        input{
+            border:none;
+            border-bottom: 1px solid black;
+        }
+        input:focus{
+            background-color: yellow;
+            outline:1px solid red;
+        
+        }
+
+        li:nth-last-child(even){
+            background-color: blue;
+        }
+
+
+    :root{
+     --primary: orange;
+     --secondary: lightsalmon;
+     --dark: black;
+     --light: white;
+     --b:1px solid blue;
+     
+     }
+
+     h1{
+        color:var(--primary)
+     }
+     p{
+        border: var(--b);
+     }
+     div{
+        background-color: var(--secondary);
+     }
+
+     #section:target{
+        background-color: aquamarine;
+     }
+  
+     #section1:target{
+        background-color: burlywood;
+     }
+    </style>
+</head>
+<body>
+    
+    <!-- 
+    box sizing 
+    margin 
+    padding 
+
+    overflow-x:hidden
+
+    display: inline-block
+    inline - w,h margin top and bottom
+    inline-block - it behaves as inline but takes properties like block
+
+
+    combinators
+    descendent space
+    child selector >
+    adjacent sibling selector +
+    general sibling selector ~
+
+    pseudo class and pseudo element selectors
+
+
+    pseudo class
+    it is used to appply styles based on a particular state of an element
+     or position of an element
+
+     #id:state{
+     //declaration
+     }
+
+
+     link --unvisited
+     visited
+     hover
+     active
+     focus
+
+
+     first-child
+     last-child
+     nth-child(1 or even or odd)
+     nth-last-child(1 or even or odd)
+
+     variables - it is used to store data---css values
+     for the purpose reusability
+
+     variable declaration
+     :root{
+     --primary: blue
+     --secondar: lightblue
+     --dark: black
+     --light: white
+     
+     }
+
+     variable usage
+
+     :root
+     :target
+      
+
+    
+    -->
+<a href="#section">linked text</a>
+<a href="#section1">linked text</a>
+
+
+
+    <div id="section">
+       <h1>this is heading</h1>
+       <p>This is paragraph</p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit in cupiditate culpa ipsa velit. Numquam, ratione nam! Accusantium rem provident eum laborum harum! Non, totam? Impedit aspernatur blanditiis ducimus enim!
+</div>
+
+<div id="section1">
+    <h1>this is heading</h1>
+    <p>This is paragraph</p>
+ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit in cupiditate culpa ipsa velit. Numquam, ratione nam! Accusantium rem provident eum laborum harum! Non, totam? Impedit aspernatur blanditiis ducimus enim!
+</div>
+
+    
+  
+</body>
+</html>
