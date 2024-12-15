@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    .container{
+        border:10px solid lightcoral;
+        height:100vh;
+        margin:200px;
+        position: relative;
+        /* background-color: lavenderblush; */
+       
+       
+        
+    }
+
+    .container>img{
+        position: absolute;
+    }
+    .child1{
+        top:0;
+        left:0
+     
+    }
+    .child2{
+   right:0;
+   top:0;
+    }
+    .child3{
+   bottom: 0;
+   left:0;
+    }
+
+    .child4{
+     right:0px;
+     bottom:0;
+    }
+
+    .child5{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+
+    .navbar{
+        background-color: lightseagreen;
+        padding:80px;
+        /* position: fixed; */
+       /* top:0;
+       z-index: 2;
+       width:100%; */
+    }
+
+    .navbar2{
+        background-color: lightblue;
+        padding:20px;
+        position: sticky;
+        top:20px;
+        z-index: 4;
+
+    }
+    
+    </style>
+</head>
+<body>
+    <!-- 
+    units
+    absolute- fixed
+    px
+    pt
+    inch
+    cm mm
+    
+    and relative - which are depends on something
+    %- parent
+    em - parent font size
+    rem- depends on font size of root element-html
+    vw- viewport- visbile screen
+    vh- viewport - visible screen- height
+
+    % 
+    rem - fonts
+    vh- empty containers - less content sections
+    vw -less than 100%
+
+
+    display:none;---hides the element and space
+    visibility:hidden;---hides the element but space is still there
+
+    positions
+    static- default
+    relative- relative to itself by applylig top, left, bottom, right
+            left and top have high priority
+
+    absolute-
+     1) out of the flow
+       we can move the over the viewport
+       z-index- controls the stack order of the elements
+    2) relative to nearest positioned parent- 
+       parent- relative  child -absolute
+
+       1) relativ  - danger
+       2) absolute - danger
+       3) relative with absolute *****
+
+       positions
+       static - default
+       relative-
+       absolute
+
+       fixed
+       sticky 
+
+
+
+
+
+
+     -->
+
+
+     <div class="navbar">fixed container</div>
+     <div style="height:40vh ;background-color: bisque;margin:20px;padding:10px">
+
+         <div class="navbar2">sticky container</div>
+     </div>
+
+     <div class="container">
+        <img src="Doraemon_character.png" alt="" class="child1">
+        <img src="Gian.png" alt="" class="child2">
+        <img src="images.jpg" alt="" srcset="" class="child3">
+        <img src="NobitaNobi.png" alt="" srcset="" class="child4">
+        <img src="Suneo_Honekawa.png" alt="" class="child5">
+       
+
+     </div>
+
+
+     <div class="element" style="background-color: lightblue;padding:10px;position: sticky;bottom: 0;">
+        bottom fixed
+     </div>
+     <div style="position: relative;">
+        <img src="Doraemon_characters.webp" alt="">
+        <p style="position: absolute;top:0;">
+            doreamon family
+        </p>
+     </div>
+</body>
+</html>
