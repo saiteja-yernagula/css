@@ -4,8 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        /* grid parent properties- grid container
+        display:grid;
+        grid-template-columns: it specifies the number of
+                   cols and the size of the columns
+        grid-template-columns: firstsize second third
+
+        by pixels
+           grid-template-columns: 100px 100px
+
+        by percentages
+         grid-template-columns: 50% 50%
+
+         by ratios
+          grid-template-columns:2fr 2fr 1fr;
+
+        by auto
+          grid-template-columns:auto auto;
+
+        by repeat
+          grid-template-columns: repeat(2,auto);
+
+
+
+          grid-template-rows: it specifies the no of rows and size of the each row
+          grid-template-rows: firstsize second third
+
+
+parent properties
+display:grid;
+grid-template-columns: 
+grid-template-rows:
+justify-content: end start center space-between space-around space-evenly
+
+
+
+        child properties - grid items
+         */
+        .parent{
+            height:100vh;
+            background-color: lightgray;
+          display: grid;
+          grid-template-columns: repeat(6,100px);
+          /* gap:20px 30px; */
+          row-gap:20px;
+          column-gap: 30px;
+          align-items: end;
+          /* align-content : space-evenly; */
+          /* justify-content: space-between; */
+
+          /* grid-template-rows:20% 30% 50%; */
+
+
+        }
+
+    
+    .parent>div{
+        border:1px solid lightseagreen;
+        padding:10px;
+        /* margin:10px; */
+       
+    }
+
+ 
+    </style>
 </head>
 <body>
+
+
+
+<div class="parent">
+
+    <div class="child1">content 1</div>
+    <div class="child2">content</div>
+    <div class="child3">content</div>
+    <div class="child1">content</div>
+    <div class="child2">content</div>
+    <div class="child3">content</div>
+   
+
+</div>
     
 </body>
 </html>
