@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: lightcoral;
+            display: flex;
+            gap:20px;
+            height: 100vh;
+            align-items:flex-start;
+        }
+
+        .parent>div{
+            background-color: lightgreen;
+            padding:20px;
+            width:300px;
+            margin:20px;
+            font-size: 30px;
+            
+        }
+
+
+        .item1{
+            /* order:1; */
+
+            /* flex-basis: 33%; */
+
+            /* flex-grow: 1; */
+            flex-shrink: 10;
+        }
+
+        .item2{
+            /* order:2 */
+            /* flex-basis: 33%; */
+            /* flex-grow: 1; */
+            align-self: stretch;
+        }
+
+        .item3{
+            /* order:3; */
+            /* flex-basis: 33%; */
+            /* flex-grow: 3;/ */
+
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+    
+    flexbox - 
+
+    parent properties
+    display:flex;
+    flex-direction:row column row-reverse column-reverse
+    justify-content:space-around space-between space-evenly flex-start center flex-end
+    align-items: flex-start center flex-end stretch
+
+    align-content:space-around space-between space-evenly flex-start center flex-end
+    flex-wrap: wrap;
+    gap:rowgap columngap:
+    
+    flex-flow: flex-direction flex-wrap;
+
+
+
+    child properties(items)- that can only appied to the childs
+    order:
+    flex-basis:     //it specifies the intial length of the child item
+    flex-grow:     //it specifies how much the child item will grow when there is extra spac
+    flex-shrink:   //it specifies how much the child item will shrink relative to there
+    flex: flex-grow flex-shrink flex-basis //it is a shorthand for flex-grow flex-shrink flex-basis
+    align-self
+    -->
+
+    <div class="parent">
+        <div class="item1">content 1</div>
+        <div class="item2">content 2</div>
+        <div class="item3">content 3</div>
+
+
+    </div>
+    
+</body>
+</html>
