@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+      
+
+        .container{
+            background-color: lavender;
+            display: grid;
+            grid-template-areas: 
+            " head head head"
+            " nav nav nav"
+            " sec1 sec1 side "
+            " sec2 sec2 side "
+            " foot foot foot";
+
+          
+        }
+
+        .container>div{
+            padding:20px;
+            margin:10px;
+            border:2px solid lightsalmon;
+           
+          
+        }
+
+        .header{
+            grid-area: head;
+        }
+
+        .navbar{
+            grid-area:nav ;
+        }
+
+        .section1{
+            grid-area: sec1 ;
+        }
+        .section2{
+            grid-area: sec2 ;
+        }
+        .aside{
+            grid-area: side ;
+        }
+        .footer{
+            grid-area: foot ;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items :center ;
+        }
+
+        nav{
+            display: flex;
+        }
+
+     
+        h1>div{
+            display: none;
+        }
+      
+
+        @media screen and (width<576px){
+           .container{
+            grid-template-areas:
+            " head"
+            " nav"
+            " sec1"
+            " sec2"
+            "side "
+            " foot";
+
+           }
+           h1>div{
+            display:  block;
+        }
+        .mainnav{
+            display: none;
+        }
+      
+          
+        
+        }
+
+
+
+
+
+
+
+
+/*
+min:32
+min: 30
+*/
+/* 
+
+@media screen and (width<768px) and (width>576px){
+    body{
+        background-color: blueviolet;
+    }
+}
+
+@media screen and (width>768px) and (width<992px){
+    body{
+        background-color: lemonchiffon;
+    }
+} */
+
+    </style>
+</head>
+<body>
+    <!-- 
+
+    grid child properties
+    grid-column-start
+    grid-column-end
+    grid-column: 1/3
+    grid-row:1/4
+    grid-area:
+    
+    
+    grid-templates-areas: 
+    "header header "
+    " nav   section1"
+    " section2 section2"
+
+
+
+    media queries 
+    to create responsive web design
+    is used to apply styles based on condition
+
+    @media only screen and (condition){
+    selector{
+    property: value;
+    }
+
+    selector{
+    property: value
+    }
+
+    }
+
+
+    -->
+
+    <header>
+        <h1>Branding</h1>
+        <nav>
+            <div class="mainnav">
+                <div>content</div>
+                <div>content</div>
+                <div>content</div>
+            </div>
+
+            <h1>
+                <div>icon</div>
+            </h1>
+        </nav>
+       
+    </header>
+
+    <h1>this is heading</h1>
+
+
+    <!-- <div class="container">
+        <div class="child">some content</div>
+        <div class="child">some content</div>
+        <div class="child">some content</div>
+        <div class="child">some content</div>
+    </div> -->
+
+
+    <div class="container">
+        <div class="header">header part</div>
+        <div class="navbar">navbar part</div>
+        <div class="section1">section1 part</div>
+        <div class="section2">section2 part</div>
+        <div class="aside">aside part</div>
+        <div class="footer">footer part</div>
+    </div>
+    
+</body>
+</html>
