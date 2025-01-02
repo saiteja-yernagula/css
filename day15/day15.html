@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            width: 300px;
+            height: 300px;
+         
+            overflow: hidden;
+           
+        }
+
+        .img{
+            transition: all;
+            transition-duration: 3s;
+
+        }
+
+        .img:hover{
+            transform: scale(1.5);
+        }
+
+        .img{
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/037/814/719/small_2x/ai-generated-autumn-leaves-in-the-forest-nature-background-photo.jpg");
+            height:50vh;
+            
+        } */
+/* 
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: lightsalmon;
+            transition: all 2s;
+
+        }
+
+        div:hover{
+            transform: skew(20deg, 20deg);
+        } */
+
+
+        div{
+            border: 1px solid red;
+            padding:20px;
+        }
+
+        .el1:hover~img{
+            transform: translate(100px);
+            transition: all 2s;
+
+        }
+
+        .el2:hover~img{
+            transform: rotate(180deg);
+            transition: all 2s;
+
+        }
+
+        .el3:hover~img{
+            transform: scale(1.5);
+            transition: all 2s;
+
+        }
+        .el4:hover~img{
+            transform: scale(1.2)  rotate(10deg) skew(10deg) translate(50px,100px);
+            transition: all 2s;
+
+        }
+     
+    </style>
+</head>
+<body>
+    
+    <!-- 
+    background proprties
+    background-color
+    background-image: url("")
+    background-repeat: no-repeat
+    background-size: cover  contain 100% 100%
+    background-position: center center
+    background-attachment:fixed;
+
+
+    transition properties
+    a - b
+    transition-property: all;
+    transition-duration: 2s;
+    tranisiton-delay: 1s;
+    transition-timing-function: ease;
+
+
+    transform 
+
+
+
+    transform:translate(horizontal,vertical)
+    
+    -->
+
+
+    <div class="el1">translate</div>
+    <div class="el2">rotate</div>
+    <div class="el3">scale</div>
+    <div class="el4">skew</div>
+
+
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/005/857/332/small_2x/funny-portrait-of-cute-corgi-dog-outdoors-free-photo.jpg" alt="">
+
+    
+
+    <p>some content</p>
+    <p>some content</p>
+    <p>some content</p>
+    <p>some content</p>
+
+
+    <div >
+         <p class="img">
+
+         </p>
+    </div>
+</body>
+</html>
